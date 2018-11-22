@@ -8,9 +8,12 @@ import { HomePage } from '../pages/home/home';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = HomePage; //paginaPrincipal
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+    //plattform :plataforma del dispositivo android , iphone, windows
+    //statusBar :  barra de estatus estado del celular 
+    //splashScreen:cargando la aplicacion
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
